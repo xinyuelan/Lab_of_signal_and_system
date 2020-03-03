@@ -1,0 +1,14 @@
+%2.2(e)(f)
+n=[0:5];
+h=n;
+x=ones(1,6);
+b=h;
+a=1;
+y=filter(h,1,x);
+ny=[0:5];
+stem(ny,y)
+pause
+x2=ones(1,11);
+x2(7:10)=0;
+y2=filter(h,1,x2);
+stem([0:10],y2)
